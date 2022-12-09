@@ -1,3 +1,5 @@
+//bai 1
+
 let i=10
 let f=20.5
 let b =true
@@ -15,15 +17,19 @@ document.write("<br/>");
 document.write("<br/>");
 document.write("<br/>");
 
+
+//bai 2
 let dai=prompt("Tính diện tích hình chữ nhật.\n Nhập vào độ dài")
 let rong=prompt ("Nhập vào độ rộng")
 let dientich=dai*rong
 document.write("Diện tích là" +dientich)
 alert   ("Diện tích là:" +dientich)
 
+
+//bai3
 let biena = prompt("Tính số a có phải là bội của b hay không.\nNhập vào số a:")
 let bienb = prompt("Nhập vào số b:")
-while ((biena == 0 || bienb == 0) || (biena > bienb))
+while ((biena == 0 || bienb == 0) && (biena > bienb))
 {
     alert(" Số đã nhập không hợp lệ, mời nhập lại.")
     biena = prompt("Nhập vào số a:")

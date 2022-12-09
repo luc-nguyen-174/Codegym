@@ -1,0 +1,2 @@
+let inputWeight;
+let inputHeight;
