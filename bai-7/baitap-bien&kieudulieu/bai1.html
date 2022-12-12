@@ -6,17 +6,23 @@
 </head>
 <body>
 <form action="bai1.html">
+    <label for="dvatly">Điểm vật lý</label>
+    <br>
     <input type="text" id="dvatly" name="dvatly" placeholder="Nhập vào điểm vât lý:" size="25" >
+    <br>
+    <label for="dhoahoc"> Điểm hóa học</label>
     <br>
     <input type="text" id="dhoahoc" name="dhoahoc" placeholder="Nhập vào điểm hóa học:" size="25">
     <br>
+    <label for="dsinhhoc">Điểm sinh học</label>
+    <br>
     <input type="text" id="dsinhhoc" name="dsinhhoc" placeholder="Nhập vào điểm sinh học:" size="25">
     <br>
-    <button onclick="diemtb()">Tính điểm trung bình</button>
+    <label for="diemtb"></label>
+    <button id="diemtb" onclick="diemtb()">Tính điểm trung bình</button>
     <br>
     <button onclick="tinhtong()" style="padding: 15px">Tính tổng điểm</button>
 </form>
 </body>
-
 <script src="bien-kieudulieu.js"></script>
 </html>

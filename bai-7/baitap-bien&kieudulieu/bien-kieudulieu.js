@@ -15,6 +15,10 @@ function tinhtong()
     alert("Tổng điểm là:"+tongdiem);
 }
 
-function bai2(){}
-function bai3(){}
-function bai4(){}
+function bai2(){
+    let doC=document.getElementById("doC")
+    let doF=((9*doC.value))/5+32;
+    alert("Độ F:"+doF);
+}
+// function bai3(){}
+// function bai4(){}
