@@ -1,45 +1,37 @@
-
-function checkMonth()
-{
-    let month=document.getElementById("month");
-    let month1=month.getMonth();
-    console.log(month);
-    switch (month1) {
-        case 0:
-        case 2:
-        case 4:
-        case 6:
-        case 8:
-        case 9:
-        case 11:
-            document.getElementById("days").innerHTML = "Tháng"+ month +"có 31 ngày";
-        break;
-        case 2:
-            document.getElementById("days").innerHTML = "Tháng"+ month +"có 28 hoặc 29 ngày";
+let thang_1 = "1";
+let thang_2 = "2";
+let thang_3 = "3";
+let thang_4 = "4";
+let thang_5 = "5";
+let thang_6 = "6";
+let thang_7 = "7";
+let thang_8 = "8";
+let thang_9 = "9";
+let thang_10 = "10";
+let thang_11 = "11";
+let thang_12 = "12";
+function checkMonth() {
+    let month = document.getElementById("month").value;
+    switch (month) {
+        case thang_1:
+        case thang_3:
+        case thang_5:
+        case thang_7:
+        case thang_8:
+        case thang_10:
+        case thang_12:
+            document.getElementById("days").innerHTML = "Tháng " + month + " có 31 ngày"
+            break;
+        case thang_4:
+        case thang_6:
+        case thang_9:
+        case thang_11:
+            document.getElementById("days").innerHTML = "Tháng " + month + " có 30 ngày"
+            break;
+        case thang_2:
+            document.getElementById("days").innerHTML = "Tháng " + month + " có 28 hoặc 29 ngày"
             break;
         default:
-            document.getElementById("days").innerHTML = "Tháng"+ month +"có 30 ngày";
+            document.getElementById("days").innerHTML = "Vui lòng nhập lại tháng"
     }
 }
-
-
-//check năm nhuận
-
-// let year = parseInt(prompt("Nhập vào năm:"));
-// let isLeapYear = false;
-//
-// if (year % 4 == 0) {
-//     if (year % 100 == 0) {
-//         if (year % 400 == 0) {
-//             isLeapYear = true;
-//         }
-//     } else {
-//         isLeapYear = true;
-//     }
-// }
-//
-// if (isLeapYear) {
-//     alert("Năm " +year + " là năm nhuận");
-// } else {
-//     alert("Năm "+year + " không phải là năm nhuận");
-// }
