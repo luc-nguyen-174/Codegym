@@ -1,0 +1,13 @@
+.dotted
+{
+    border: 3px dotted black;
+    border-style: dotted;
+}
+
+.horizontal_dotted_line{
+    border-bottom: 1px dotted [color];
+    width: [put your width here]px;
+}
+.header3{
+    border-bottom:1px dotted #ccc;
+}
