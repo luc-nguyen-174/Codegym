@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="txtValue"></label>
+<input type="text" id="txtValue"/>
+<input type="button" value="Add" onclick="add_element_to_array();"/>
+<input type="button" value="Max Find" onclick="maxFind();">
+<p id="intAlert"></p>
+</body>
+<script>
+
+  let x=0;
+  let array = new Array();
+  function add_element_to_array() {
+    array[x] = document.getElementById("txtValue").value;
+    document.getElementById("intAlert").innerText=("Element: " + array[x] + " Added at index " + x);
+    console.log(array);
+    x++;
+  }
+  function maxFind() {
+  let max = array[0];
+  let index = 0;
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+      index = i;
+    }
+  }
+  alert("max: " + max + " at position " + index);}
+</script>
+</html>
+

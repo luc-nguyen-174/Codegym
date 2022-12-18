@@ -1,5 +1,5 @@
 let x=0;
-let array = Array();
+let array = new Array();
 function add_element_to_array() {
     array[x] = document.getElementById("txtValue").value;
     alert("Element: " + array[x] + " Added at index " + x);
@@ -13,8 +13,3 @@ function display_array() {
     }
     document.getElementById("result").innerHTML = e;
 }
-
-
-let y=[-3,5,1,3,2,10]
-let first=0;
-let last=y.length-1;
