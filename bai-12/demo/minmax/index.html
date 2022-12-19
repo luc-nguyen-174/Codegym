@@ -7,11 +7,11 @@
 <body>
 
 <label>Nhap vao cac gia tri cua mang</label><br>
-<input type="text" name="txtValue" id="txtValue" style="width: 200px"><br/>
-<button id="btn1" class="btn1" onclick="addItem()">Nhap vao gia tri</button>
+<input type="text" name="txtValue" id="txtValue" style="width: 200px" onkeydown="keyMap(event)"><br/><br/>
+<button id="btn1" class="btn1" onclick="addItem()">Nhap vao gia tri</button><br/><br/>
 <button type="button" name="minFindButton" id="minFindButton" onclick="minFind()">Tim min</button>
-<p id="minAlert"></p>
 <button type="button" name="maxFindButton" id="maxFindButton" onclick="maxFind()">Tim max</button>
+<p id="minAlert"></p>
 <p id="maxAlert"></p>
 <p id="alert1"></p>
 </body>
