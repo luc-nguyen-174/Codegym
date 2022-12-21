@@ -40,7 +40,3 @@ function keyMap(evt) {
             break;
     }
 }
-//
-// function docReady() {
-//     window.addEventListener("keydown", keyMap(event));
-// }

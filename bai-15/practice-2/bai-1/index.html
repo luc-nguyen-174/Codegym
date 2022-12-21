@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="num" onchange="square(this.value)" oninput="this.value">
+<p id="results"></p>
+</body>
+<script>
+  function square(num) {
+      let sqr=num*num;
+      console.log(sqr);
+      document.getElementById("results").innerHTML=sqr;
+  }
+</script>
+</html>

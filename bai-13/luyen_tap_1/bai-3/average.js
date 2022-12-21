@@ -24,5 +24,10 @@ function findMax() {
 
 function averageCount() {
     let averageCount=0;
-
+    let sum=0;
+    for (let i = 0; i < numberArr.length; i++){
+        sum+=numberArr[i];
+    }
+    averageCount = sum/numberArr.length;
+    document.getElementById("dislay").innerHTML="Gia tri trung binh la " + averageCount
 }
