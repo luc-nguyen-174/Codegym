@@ -2,7 +2,6 @@ function primeCheck(number) {
     let isPrime = true;
 
     if ((number == 0) || (number == 1)) {
-        // document.getElementById("dislay").innerText = "Số " + number + " không phải là số nguyên tố."
         isPrime= false;
     } else
         for (let i = 2; i < number; i++) {

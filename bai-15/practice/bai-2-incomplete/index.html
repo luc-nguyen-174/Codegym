@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="number" oninput="newArgs()" onchange="newArgs()">
+</body>
+<script>
+    let x = document.getElementById("number").value;
+
+    function newArgs(number0) {
+        number0 += 1;
+        return number0;
+    }
+
+    newArgs(x)
+    console.log(newArgs(x));
+</script>
+</html>
