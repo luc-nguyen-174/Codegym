@@ -5,32 +5,24 @@
     <title>Title</title>
 </head>
 <body>
-<input type="text" id="txtValue">
-<p id="result0"></p>
-<button type="button" id="btn" onclick="addItem()">Nhap vao chuoi</button>
-<button type="button" id="btn2" onclick="addItem2()">them dau - vao chuoi</button>
+
 </body>
 <script>
-    let arrs = Array();
-    let i = 0;
+    let num=prompt("nhap vao so");
+    let str = num.toString();
+    let result = [str[0]];
 
-    function addItem() {
-        arrs[i] = document.getElementById("txtValue").value;
-        i++;
-        document.getElementById("result0").innerHTML = ("Mang da nhap vao la" + arrs);
-        console.log(arrs);
-    }
-
-
-    function addItem2() {
-        for (let i = 1; i < arrs.length; i++) {
-            if ((arrs[i - 1] % 2 === 0) && (arrs[i] % 2 === 0)) {
-                arrs.push("-", arrs[i]);
-            } else {
-                arrs.push(arrs[i]);
-            }
+    for(let x=1; x<str.length; x++)
+    {
+        if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+        {
+            result.push('-', str[x]);
         }
-        console.log(arrs.join(''));
+        else
+        {
+            result.push(str[x]);
+        }
     }
+    document.write(result.join(''));
 </script>
 </html>
