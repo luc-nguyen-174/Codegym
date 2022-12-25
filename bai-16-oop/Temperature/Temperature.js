@@ -19,8 +19,7 @@ class Temperature{
 
 }
 //khoi tao doi tuong
-let d1 = new Temperature(1);
-let d2 = new Temperature(2);
+let d1 = new Temperature(25);
 // truy xuat phuong thuc cua doi tuong
-d1.convertCtoF()
-d2.convertCtoF()
+console.log(d1.convertCtoK())
+console.log(d1.convertCtoF())
