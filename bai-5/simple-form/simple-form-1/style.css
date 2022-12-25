@@ -1,0 +1,11 @@
+.container{
+    position: absolute;
+    left: 50%;
+    margin: auto;
+
+}
+h3{
+    text-align: center;
+    background: rgba(249,97,0,0.99);
+    color: #fff;
+}
