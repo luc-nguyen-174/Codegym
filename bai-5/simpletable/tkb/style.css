@@ -1,0 +1,27 @@
+
+div{
+    color: blue;
+    width: 100%;
+}
+h2{
+    text-transform: uppercase;
+    color:blue;
+}
+.left{
+    float:left;
+    max-height: 50%;
+}
+.right{
+
+}
+h2{
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td{
+    border: 1px solid #000000;
+    text-align: center;
+}
