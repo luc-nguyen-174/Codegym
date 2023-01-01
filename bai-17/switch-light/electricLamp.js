@@ -8,15 +8,3 @@ class ElectricLamp {
     }
 }
 
-
-class SwitchButton {
-
-    constructor(status, lamp) {
-        this.status = status;
-        this.lamp = lamp;
-    }
-    connectToLamp(newLamp) {
-        this.lamp=newLamp;
-    }
-
-}
